@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pure CSS Heart Animation</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<style type="text/css">
+		
+		body{
+			background: url(https://images.pexels.com/photos/1988698/pexels-photo-1988698.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) no-repeat;
+			background-size: cover;
+			background-position: center;
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		.fa-heart{
+			font-size: 28px;
+			color: red;
+			position: absolute;
+			bottom: -100px;
+			animation: heart 5s linear infinite;
+		}
+
+		@keyframes heart{
+			0%{
+				opacity: 0;
+				color: blue;
+			}
+			50%{
+				opacity: 1;
+				color: red;
+				font-size: 38px;
+			}
+			100%{
+				bottom: 100%;
+				opacity: 0;
+				color: yellow;
+			}
+		}
+
+
+		/*YOU CAN SET EVERY HEART POSITION AND DELAY AS YOU LIKE*/
+		.fa-heart:nth-child(2n) {
+			left: 10%;
+			animation-delay: 1s;
+		}
+
+		.fa-heart:nth-child(3n) {
+			left: 20%;
+			animation-delay: 1.6s;
+		}
+
+
+		.fa-heart:nth-child(4n) {
+			left: 30%;
+			animation-delay: 2s;
+		}
+
+		.fa-heart:nth-child(5n) {
+			left: 40%;
+			animation-delay: .6s;
+		}
+
+
+		.fa-heart:nth-child(6n) {
+			left: 50%;
+			animation-delay: 1.1s;
+		}
+		
+		.fa-heart:nth-child(7n) {
+			left: 60%;
+			animation-delay: 1.7s;
+		}
+		
+		.fa-heart:nth-child(8n) {
+			left: 70%;
+			animation-delay: 3.5s;
+		}
+		
+		.fa-heart:nth-child(9n) {
+			left: 80%;
+			animation-delay: 1.4s;
+		}
+		
+		.fa-heart:nth-child(10n) {
+			left: 90%;
+			animation-delay: 4s;
+		}
+		
+		.fa-heart:nth-child(11n) {
+			left: 95%;
+			animation-delay: .6s;
+		}
+		.fa-heart:nth-child(12n) {
+			left: 85%;
+			animation-delay: .4s;
+		}
+		
+		
+	</style>
+</head>
+<body>
+
+
+<i class="fas fa-heart"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-heart"></i>
+
+</body>
+</html>
